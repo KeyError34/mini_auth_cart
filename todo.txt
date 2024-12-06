@@ -1,0 +1,43 @@
+const User = {
+  id,
+  name,
+  email,
+  password,
+  cart,
+};
+
+const Cart = {
+  id,
+  total,
+  products,
+  quantity,
+};
+
+const Product = {
+  id,
+  name,
+  quantity,
+  price,
+  dateAdded,
+};
+
+
+api
+
+/users
+/users/all  /GET
+/users/:id  /GET
+
+/auth
+/auth/register         /POST
+/auth/login            /POST
+*/auth/reset-password  /POST
+
+/cart
+/cart/:id                         /GET
+/cart/:userid/product             /POST
+/cart/:userid/product/:productId  /DELETE
+/cart/products/:id                /GET 
+
+/products 
+/products/:id /GET
